@@ -11,4 +11,4 @@ $git clone http://github.com/akhilvaka2/Ansible.git && cd Ansible
 
 Step 2: Run playbook to install all the software packages 
 
-$ansible-playboon sm.yml
+$ansible-playbook scm.yml
