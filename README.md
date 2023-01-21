@@ -1,26 +1,13 @@
 # Pre-Requisites
-Step 1: Create public and private key using the below command
-$ssh-keygen
+Step 1: Install ansible tool
+
+$sudo yum install epel-release
+
+$sudo yum install ansible
 
 # Execution Flow
-Step 1: Clone the terraform repo
+Step 1: clone Ansible repo
+$git clone http://github.com/akhilvaka2/Ansible.git && cd Ansible
 
-$git clone https://github.com/akhilvaka2/Terraform.git && cd Terraform
-
-Step 2: add public key in keypair resource
-
-$vi infra.tf
-
-Step 3: Initialize terraform to install aws provider plugin
-
-$terraform init 
-
-Step 4: Apply
-
-$terraform apply
-
-
-
-GitHub - akhilvaka2/Terraform
-https://github.com
-
+Step 2: Run playbook to install all the software packages
+$ansible-playboon sm.yml
