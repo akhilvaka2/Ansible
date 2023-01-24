@@ -3,9 +3,6 @@
   hosts: localhost
   become: true
   tasks:
-    - name: this task is to install git
-      yum:
-        name: git
     - name: this task is to install pip
       yum:
         name: python3-pip 
